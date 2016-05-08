@@ -11,6 +11,13 @@
 Version: 2.0 (Jan 29, 2007)
 
 Screen layout: */
+* {
+  box-sizing: border-box;
+}
+*::before,
+* ::after {
+  box-sizing: border-box;
+}
 body {
   padding: 15px 0 0 0;
   margin: 0;
@@ -54,9 +61,13 @@ p {
 /* Main container */
 .container {
   margin: 0 auto 20px auto;
-  width: 730px;
   padding: 5px 20px 20px 20px;
   background: #fff;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* Site title section */
 .logo {
@@ -166,7 +177,7 @@ p {
 }
 /* Main content */
 .main {
-  width: 550px;
+  width: 66.66%;
   float: left;
   padding: 0 15px 0 0;
   margin: 0;
@@ -174,8 +185,9 @@ p {
 }
 /* Sidebar */
 .sidebar {
-  width: 150px;
+  width: 33.33%;
   float: right;
+  padding-left: 15px;
 }
 .sidebar p {
   font-size: 0.9em;
@@ -239,4 +251,24 @@ p {
   display: block;
   height: auto;
   max-width: 100%;
+}
+@media screen and (min-width: 544px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
