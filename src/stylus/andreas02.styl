@@ -1,0 +1,233 @@
+$verylightgray = #e0e0e0
+$mostlyblack = #303030
+$verydarkgray = #505050
+$white = #ffffff
+$darkgray = #808080
+$lightgray = #f0f0f0
+$graymostlywhite = #fafafa
+$graygray = #eaeaea
+$lightgraylight = #d8d8d8
+/*! andreas02 - a free xhtml/css website layout by Andreas Viklund - http://andreasviklund.com - Free to use for any purpose as long as the proper credits are given to the original author.
+
+Version: 2.0 (Jan 29, 2007)
+
+Screen layout: */
+body
+  padding: 15px 0 0 0
+  margin: 0
+  font: 76% tahoma, verdana, sans-serif
+  background: $verylightgray
+  color: $mostlyblack
+
+a
+  color: $mostlyblack
+  text-decoration: none
+  border-bottom: 1px dotted $verydarkgray
+  &:hover
+    color: $mostlyblack
+    text-decoration: none
+    border-bottom: 1px solid $verydarkgray
+  img
+    border: 0
+
+h1
+  margin: 0 0 20px 0
+  font-size: 2.2em
+  font-weight: normal
+
+h2
+  margin: 0 0 12px 0
+  font-size: 1.6em
+  font-weight: normal
+
+h3
+  margin: 0 0 10px 0
+  font-size: 1.4em
+  font-weight: normal
+
+p
+  margin: 0 0 15px 0
+  line-height: 1.5em
+  text-align: left
+
+/*! Main container */
+
+.container
+  margin: 0 auto 20px auto
+  width: 730px
+  padding: 5px 20px 20px 20px
+  background: $white
+
+/*! Site title section */
+
+.logo
+  margin: 15px 0 0 0
+  h1
+    a
+      color: $verydarkgray
+      border: 0
+      &:hover
+        color: $mostlyblack
+        text-decoration: none
+        border: 0
+
+/*! Toptab menu */
+
+.toptabs
+  margin: 10px auto -13px auto
+  font-size: 0.8em
+  width: 760px
+  p
+    text-align: right
+    color: $darkgray
+  p
+    text-decoration: none
+
+.toptab
+  padding: 4px 5px 4px 5px
+  margin: 0 0 0 4px
+  text-decoration: none
+  background: $lightgray url('../images/corner2.gif') top right no-repeat
+  color: $darkgray
+  border-bottom: 1px solid $white
+  &:hover
+    background: $graymostlywhite url('../images/corner2.gif') top right no-repeat
+    border-bottom: 1px solid $white
+    color: $verydarkgray
+    text-decoration: none
+
+.activetoptab
+  padding: 4px 5px 3px 5px
+  margin: 0 0 0 4px
+  color: $verydarkgray
+  text-decoration: none
+  background: $white url('../images/corner2.gif') top right no-repeat
+  border-bottom: 1px solid $white
+  &:hover
+    text-decoration: none
+    border-bottom: 1px solid $white
+
+/*! Navitab menu */
+
+.navitabs
+  clear: both
+
+.navitab
+  padding: 4px 8px 4px 8px
+  margin: 0 0 4px 0
+  text-decoration: none
+  font-size: 1.1em
+  background: $verylightgray url('../images/corner.gif') top right no-repeat
+  border-bottom: 1px solid $white
+  border-left: 1px solid $white
+  &:hover
+    text-decoration: none
+    background: #d0d0d0 url('../images/corner.gif') top right no-repeat
+    border-bottom: 1px solid $white
+
+.activenavitab
+  padding: 4px 8px 5px 8px
+  color: $white
+  margin: 0 0 5px 0
+  font-size: 1.1em
+  text-decoration: none
+  background: $verydarkgray url('../images/corner.gif') top right no-repeat
+  &:hover
+    text-decoration: none
+    color: $white
+
+/*! Header description */
+
+.desc
+  height: 200px
+  color: $white
+  padding: 0
+  background: $verydarkgray url('../images/front.jpg') top left no-repeat
+  clear: both
+  margin: 5px 0 15px 0
+  p
+    width: 290px
+    font-size: 1em
+    line-height: 1.3em
+    padding: 0 0 0 15px
+  h2
+    padding: 15px 15px 0 15px
+    color: $white
+  a
+    color: $white
+    text-decoration: none
+    border-color: $white
+
+/*! Main content */
+
+.main
+  width: 550px
+  float: left
+  padding: 0 15px 0 0
+  margin: 0
+  border-right: 1px solid $lightgraylight
+
+/*! Sidebar */
+
+.sidebar
+  width: 150px
+  float: right
+  p
+    font-size: 0.9em
+    line-height: 1.3em
+    margin: 0 0 15px 0
+
+/*! Footer */
+
+.footer
+  clear: both
+  background: $graymostlywhite
+  padding: 0
+  margin: 0
+  border-top: 1px solid $lightgraylight
+  a
+    color: $darkgray
+    &:hover
+      color: $mostlyblack
+  p
+    color: $darkgray
+    font-size: 1.1em
+    line-height: 1.3em
+    margin: 15px 0 0 0
+    padding: 0
+
+/*! Various classes */
+
+.photo
+  padding 2px
+  margin 0 0 8px 0
+  background-color $lightgray
+  border 1px solid $lightgraylight
+
+.right
+  margin-top -8px
+  text-align right
+
+.block
+  background: $lightgray
+  padding: 10px
+
+.sidelink
+  text-align: left
+  display: block
+  width: 140px
+  background: $lightgray url('../images/corner.gif') top right no-repeat
+  padding: 3px 4px 3px 8px
+  margin: 5px 10px 5px 0
+  border: 0
+  &:hover
+    background: $verylightgray url('../images/corner.gif') top right no-repeat
+    text-decoration: none
+    border: 0
+
+.hide
+  display: none
+.img-responsive
+  display: block
+  height: auto
+  max-width: 100%

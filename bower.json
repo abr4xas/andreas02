@@ -1,0 +1,21 @@
+{
+    "name": "andreas02",
+    "description": "This is a 2-column fixed-width XHTML/CSS template with dual multiple tab menus and an additional sidebar button menu set, made for websites with lots of content. Print stylesheet included.",
+    "main": "index.html",
+    "authors": [
+        "Angel Cruz <me@abr4xas.org>"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/abr4xas/andreas02",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "normalize-css": "^4.1.1"
+    }
+}
