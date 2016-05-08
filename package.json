@@ -1,0 +1,31 @@
+{
+    "name": "andreas02",
+    "version": "2.0.1",
+    "description": "This is a 2-column fixed-width XHTML/CSS template with dual multiple tab menus and an additional sidebar button menu set, made for websites with lots of content. Print stylesheet included.",
+    "scripts": {
+        "start": "npm run-script dev",
+        "dev": "live-server --port=3000 --host=0.0.0.0",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "Angel Cruz <me@abr4xas.org>",
+    "license": "MIT",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-clean-css": "^2.0.4",
+        "gulp-concat": "^2.6.0",
+        "gulp-header": "^1.7.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-size": "^2.1.0",
+        "gulp-stylus": "^2.3.1",
+        "live-server": "^0.9.2"
+    }
+}
