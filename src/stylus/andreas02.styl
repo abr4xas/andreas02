@@ -38,7 +38,7 @@ a
     text-decoration: none
     border-bottom: 1px solid $verydarkgray
   img
-    border: 0
+      border: 0
 
 h1
   margin: 0 0 20px 0
@@ -66,6 +66,7 @@ p
   margin: 0 auto 20px auto
   padding: 5px 20px 20px 20px
   background: $white
+  width: 760px
   &::after
     content ""
     display table
@@ -74,15 +75,15 @@ p
 /*! Site title section */
 
 .logo
-  margin: 15px 0 0 0
+    margin: 15px 0 0 0
   h1
     a
-      color: $verydarkgray
+     color: $verydarkgray
+     border: 0
+     &:hover
+      color: $mostlyblack
+      text-decoration: none
       border: 0
-      &:hover
-        color: $mostlyblack
-        text-decoration: none
-        border: 0
 
 /*! Toptab menu */
 
@@ -123,7 +124,7 @@ p
 /*! Navitab menu */
 
 .navitabs
-  clear: both
+    clear: both
 
 .navitab
   padding: 4px 8px 4px 8px
@@ -154,7 +155,6 @@ p
 .desc
   height: 200px
   color: $white
-  padding: 0
   background: $verydarkgray url('../images/front.jpg') top left no-repeat
   clear: both
   margin: 5px 0 15px 0
@@ -187,28 +187,28 @@ p
   float: right
   padding-left: 15px
   p
-    font-size: 0.9em
-    line-height: 1.3em
-    margin: 0 0 15px 0
+   font-size: 0.9em
+   line-height: 1.3em
+   margin: 0 0 15px 0
 
 /*! Footer */
-
 .footer
-  clear: both
-  background: $graymostlywhite
-  padding: 0
-  margin: 0
-  border-top: 1px solid $lightgraylight
+  clear both
+  background $graymostlywhite
+  padding 0
+  margin 0
+  border-top 1px solid $lightgraylight
   a
-    color: $darkgray
+    color $darkgray
     &:hover
-      color: $mostlyblack
+      color $mostlyblack
   p
-    color: $darkgray
-    font-size: 1.1em
-    line-height: 1.3em
-    margin: 15px 0 0 0
-    padding: 0
+    color $darkgray
+    font-size 1.1em
+    line-height 1.3em
+    margin 15px 0 0 0
+    padding 0
+
 
 /*! Various classes */
 
@@ -246,18 +246,35 @@ p
   height: auto
   max-width: 100%
 
-@media screen and (min-width: 544px)
-    .container
-      max-width 576px
+.inline>li
+    display: inline-block
+    padding-right: 5px
+    padding-left: 5px
 
-@media screen and (min-width: 768px)
-    .container
-      max-width 720px
 
-@media screen and (min-width: 992px)
-    .container
-      max-width 940px
-
-@media screen and (min-width: 1200px)
-    .container
-      max-width 1140px
+@media only screen and (width : 320px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1)
+	.toptabs, .container, .main, .sidebar, .sidelink
+        width 100%
+    .main
+        border-right 0 none
+        padding 0
+    .sidebar
+        padding 0
+    .desc p
+        width 100%
+    .toptabs
+        margin-left -10px
+    *
+        background black
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait)
+	.toptabs, .container, .main, .sidebar, .sidelink
+        width 100%
+    .main
+        border-right 0 none
+        padding 0
+    .sidebar
+        padding 0
+    .desc p
+        width 100%
+    .toptabs
+        margin-left -10px

@@ -63,6 +63,7 @@ p {
   margin: 0 auto 20px auto;
   padding: 5px 20px 20px 20px;
   background: #fff;
+  width: 760px;
 }
 .container::after {
   content: "";
@@ -73,11 +74,11 @@ p {
 .logo {
   margin: 15px 0 0 0;
 }
-.logo h1 a {
+h1 a {
   color: #505050;
   border: 0;
 }
-.logo h1 a:hover {
+h1 a:hover {
   color: #303030;
   text-decoration: none;
   border: 0;
@@ -155,7 +156,6 @@ p {
 .desc {
   height: 200px;
   color: #fff;
-  padding: 0;
   background: #505050 url("../images/front.jpg") top left no-repeat;
   clear: both;
   margin: 5px 0 15px 0;
@@ -252,23 +252,55 @@ p {
   height: auto;
   max-width: 100%;
 }
-@media screen and (min-width: 544px) {
-  .container {
-    max-width: 576px;
+.inline>li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+@media only screen and (width: 320px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1) {
+  .toptabs,
+  .container,
+  .main,
+  .sidebar,
+  .sidelink {
+    width: 100%;
+  }
+  .main {
+    border-right: 0 none;
+    padding: 0;
+  }
+  .sidebar {
+    padding: 0;
+  }
+  .desc p {
+    width: 100%;
+  }
+  .toptabs {
+    margin-left: -10px;
+  }
+  * {
+    background: #000;
   }
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .toptabs,
+  .container,
+  .main,
+  .sidebar,
+  .sidelink {
+    width: 100%;
   }
-}
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 940px;
+  .main {
+    border-right: 0 none;
+    padding: 0;
   }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+  .sidebar {
+    padding: 0;
+  }
+  .desc p {
+    width: 100%;
+  }
+  .toptabs {
+    margin-left: -10px;
   }
 }
